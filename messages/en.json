@@ -1,0 +1,24 @@
+{
+    "Home": {
+        "title": "Welcome to Arova"
+    },
+
+    "Hero": {
+        "title": "Premium Indonesian Patchouli Oil Supplier",
+        "description": "Arova is an Indonesian trading company specializing in the production and export of high-quality patchouli oil. We manage our supply chain from cultivation to export to ensure consistency, traceability, and reliability.",
+        "button": "Discover our products"
+    },
+
+    "Navbar": {
+        "home": "Home",
+        "product": "Products",
+        "quality": "Quality",
+        "client": "Client",
+        "contact": "Contact"
+    },
+
+    "About": {
+        "title":"Aroma of Excellence",
+        "description":"Located in Kepulauan Banggai, Sulawesi, our patchouli is grown in an optimal tropical climate known for producing oil with a rich, earthy, and long‑lasting aroma profile."
+    }
+}
