@@ -49,5 +49,26 @@
     "CTA": {
         "text": "携手共创更美好的世界",
         "button": "联系我们"
+    },
+    "ProductHero":{
+        "headline": "广藿香油",
+        "subheadline": "波戈斯特蒙·卡布林",
+        "description": "我们的广藿香精油采用来自印尼苏拉威西的优质原料,经蒸汽蒸馏而成。产品广藿香醇(PA)含量达到30%及以上,相较于低PA含量产品,具有更浓 郁、更稳定且更高品质的香气表现"
+    },
+    "ProductIngridients":{
+        "title":"",
+        "formula":""
+    },
+    "ProductApply": {
+        "title":"典型应用",
+        "apply1":"香水与香精调香",
+        "apply2":"化妆品与个人护理产品",
+        "apply3":"芳香疗法与健康产品",
+        "apply4":"家居香氛产品"
+    },
+    "ProductSupply":{
+        "title":"供应能力",
+        "description":"可为工业用途提供大批量供应,并可根据需求定制特殊规格.",
+        "button":"下载产品规格书"
     }
 }

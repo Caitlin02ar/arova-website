@@ -10,11 +10,9 @@
   --color-dis: #8d8d8d;
   --color-avail: #000000;
 
-  /* 🎯 DEFAULT THEME */
   --background: var(--color-cream-1);
   --foreground: var(--color-dark-green);
 
-  /* 🔤 FONTS */
   --font-sans: var(--font-assistant);
   --font-heading: var(--font-work-sans);
 }

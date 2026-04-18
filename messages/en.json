@@ -53,5 +53,28 @@
     "CTA":{
         "text": "Let’s Grow Together\nfor a Better World",
         "button": "Contact Us"
+    },
+
+    "ProductHero": {
+        "headline": "Patchouli Oil",
+        "subheadline": "Pogostemon cablin",
+        "description": "Premium steam‐distilled patchouli oil sourced from Sulawesi, Indonesia. Our patchouli oil meets a Standard PA level of 30% and above, ensuring a richer, more stable, and higher-grade aroma profile compared to lower-PA oils."
+    },
+
+    "ProductIngridients":{
+        "title":"",
+        "formula":""
+    },
+    "ProductApply": {
+        "title":"Typical Applications",
+        "apply1":"Fine fragrance and perfume",
+        "apply2":"Cosmetics and personal care",
+        "apply3":"Aromatherapy and wellness",
+        "apply4":"Home fragrance"
+    },
+    "ProductSupply":{
+        "title":"Available Supply",
+        "description":"Arova provides large quantities of supplies for industrial use and special specifications upon request.",
+        "button":"Download Product Specification"
     }
 }

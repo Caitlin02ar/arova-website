@@ -15,7 +15,6 @@ export default function About() {
                     <h2 className="font-heading text-2xl mb-4 font-[500]">
                     {t('title')}
                     </h2>
-
                     <p className="text-md w-xs leading-relaxed">
                     {t('description')}
                     </p>
