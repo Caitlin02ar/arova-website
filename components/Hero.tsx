@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { usePathname } from 'next/navigation';
 import Button from './Button';
+import { motion } from 'framer-motion';
 
 export default function Hero() {
     const t = useTranslations('Hero');
@@ -10,14 +11,24 @@ export default function Hero() {
     const locale = pathname.split('/')[1];
 
     return (
-        <section className="h-screen bg-no-repeat bg-cover flex items-center justify-center text-white"
-        style={{ backgroundImage: "url('/photos/hero-bg.jpg')" }}>
+        <motion.section
+            initial={{ opacity: 0, scale: 1 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
+            className="relative h-screen bg-no-repeat bg-cover flex items-center justify-center text-white"
+            style={{ backgroundImage: "url('/photos/hero-bg.jpg')" }}
+        >
             <div className="text-center max-w-2xl">
                 <div className="absolute inset-0 bg-black/50" />
                 <div className="relative z-10 text-center max-w-2xl">
-                    <h1 className="font-heading text-6xl">
+                    <motion.h1
+                        className="font-heading text-6xl"
+                        initial={{ opacity: 0, y: 40 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay:0.8 }}
+                    >
                         {t('title')}
-                    </h1>
+                    </motion.h1>
                     <p className="mt-6 text-lg font-light">
                         {t('description')}
                     </p>
@@ -28,6 +39,6 @@ export default function Hero() {
                     </div>
                 </div>
             </div>
-        </section>
+        </motion.section>
     );
 }

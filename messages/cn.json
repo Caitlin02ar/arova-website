@@ -2,6 +2,28 @@
     "Home":{
         "title": "欢迎来到Arova"
     },
+    "Footer": {
+    "home": "首页",
+    "about": "关于我们",
+    "ourProduct": "我们的产品",
+    "patchouliOil": "广藿香精油",
+    "qualityProduct": "质量与产品",
+    "integratedProduction": "一体化生产管理",
+    "qualityAssurance": "品质控制体系",
+    "reliableExport": "可靠的出口业务",
+    "guarantee": "我们的品质保证",
+    "client": "客户",
+    "district": "地区",
+    "contact": "联系",
+    "contactUs": "联系我们",
+    "office": "办公室",
+    "officeLocation": "办公室地址",
+    "address1": "APL Tower 26楼 T3 单元",
+    "address2": "Central Park, Jl. Sparman 28, 西雅加达",
+    "address3": "雅加达 11470, 印度尼西亚",
+    "backToTop": "返回顶部",
+    "copyright": "© PT. Langkah Menara Utama"
+    },
     "Hero":{
         "title": "印尼优质广藿香精油供应商",
         "description": "Arova(阿洛华)是一家专注于 高品质广藿香油生产与出口 的印度尼西亚 贸易公司。我们从源头把控供应链,确保产品在品质、稳定性与交付能力方 面满足国际客户的长期需求。",
@@ -17,5 +39,15 @@
     "About": {
         "title":"卓越之香",
         "description":"我们的广藿香种植于 苏拉威西邦盖群岛,该地区具备稳定的热带气候、充足降雨与肥沃土壤,能够孕育出香气浓郁、层次分明、留香持久的优质广藿香油。"
+    },
+
+    "Value": {
+        "value1":"稳定一致的产品品质",
+        "value2":"长期可靠的供货能力",
+        "value3":"透明规范的商业合作方式"
+    },
+    "CTA": {
+        "text": "携手共创更美好的世界",
+        "button": "联系我们"
     }
 }

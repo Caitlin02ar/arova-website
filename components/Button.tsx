@@ -44,7 +44,7 @@ type ButtonProps = {
     return (
         <Link
         href={href}
-        className={`group inline-flex items-center gap-2 px-5 py-2 border text-sm tracking-wide transition duration-300 ${styles[variant]}`}
+        className={` text-heading group inline-flex items-center gap-2 px-5 py-2 border text-md tracking-wide transition duration-300 ${styles[variant]}`}
         >
         {children}
         <span className="transition group-hover:translate-x-1">

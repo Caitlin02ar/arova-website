@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Work_Sans, Assistant } from "next/font/google";
 import "./globals.css";
-
+import LoadingScreen from "@/components/LoadingScreen";
 const workSans = Work_Sans({
   subsets: ["latin"],
   variable: "--font-work-sans",
@@ -27,7 +27,11 @@ export default function RootLayout({
       lang="en"
       className={`${workSans.variable} ${assistant.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-sans">{children}</body>
+      <body className="min-h-full flex flex-col font-sans">
+        <LoadingScreen>
+          {children}
+        </LoadingScreen>
+        </body>
     </html>
   );
 }

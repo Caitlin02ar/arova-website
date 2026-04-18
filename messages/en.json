@@ -3,6 +3,29 @@
         "title": "Welcome to Arova"
     },
 
+    "Footer": {
+    "home": "Home",
+    "about": "About Us",
+    "ourProduct": "Our Product",
+    "patchouliOil": "Patchouli Oil",
+    "qualityProduct": "Quality & Product",
+    "integratedProduction": "Integrated Production",
+    "qualityAssurance": "Quality Assurance",
+    "guarantee": "What We Guarantee",
+    "reliableExport": "Reliable Export Operations",
+    "client": "Client",
+    "district": "District",
+    "contact": "Contact",
+    "contactUs": "Contact Us",
+    "office": "Office",
+    "officeLocation": "Office Location",
+    "address1": "APL Tower 26 Floor Unit T3",
+    "address2": "Central Park, Jl. Sparman 28, West Jakarta",
+    "address3": "Jakarta 11470, Indonesia",
+    "backToTop": "Back to top",
+    "copyright": "© PT. Langkah Menara Utama"
+    },
+
     "Hero": {
         "title": "Premium Indonesian Patchouli Oil Supplier",
         "description": "Arova is an Indonesian trading company specializing in the production and export of high-quality patchouli oil. We manage our supply chain from cultivation to export to ensure consistency, traceability, and reliability.",
@@ -20,5 +43,15 @@
     "About": {
         "title":"Aroma of Excellence",
         "description":"Located in Kepulauan Banggai, Sulawesi, our patchouli is grown in an optimal tropical climate known for producing oil with a rich, earthy, and long‑lasting aroma profile."
+    },
+    
+    "Value": {
+        "value1": "Quality consistency",
+        "value2": "Long‑term\nsupply reliability",
+        "value3": "Transparent\nbusiness practices"
+    },
+    "CTA":{
+        "text": "Let’s Grow Together\nfor a Better World",
+        "button": "Contact Us"
     }
 }
