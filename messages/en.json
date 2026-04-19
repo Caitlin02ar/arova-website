@@ -76,5 +76,71 @@
         "title":"Available Supply",
         "description":"Arova provides large quantities of supplies for industrial use and special specifications upon request.",
         "button":"Download Product Specification"
+    },
+    "Quality": [
+        {
+            "title": "Integrated Production",
+            "points": [
+            "Strict selection of experienced local farmers",
+            "Standardized harvesting cycle management",
+            "In-house steam distillation facility"
+            ]
+        },
+        {
+            "title": "Quality Assurance",
+            "points": [
+            "Own warehouse with standardized storage",
+            "Lab testing for every batch",
+            "Aroma and composition consistency control"
+            ]
+        },
+        {
+            "title": "What We Guarantee",
+            "points": [
+            "High consistency between batches",
+            "Complete export documentation (COA / MSDS)",
+            "Meets international procurement standards"
+            ]
+        },
+        {
+            "titleWhyChoose": "Why Choose Arova",
+            "pointsWhyChoose": [
+            "Direct supply from Indonesia core production areas",
+            "Controlled quality and stable supply",
+            "Professional, transparent, long-term partnership",
+            "Suitable for scalable and continuous procurement"
+            ]
+        },
+        {
+            "titlePackaging":"Packaging",
+            "descriptionPackaging":"Our high-grade patchouli oil is securely packaged in durable jerry cans designed to protect product quality during storage and transport.",
+            "disclaimer":"The picture used is for illustration purposes only*"
+        }
+    ],
+    "Client":{
+        "description":"With over 10,000 kilograms supplied across Sulawesi, our patchouli oil continues to be the preferred choice for quality and consistency."
+    },
+    "Contact":{
+        "companyName":"Company Name",
+        "contactPerson":"Contact Person",
+        "email/Phone":"Email/Phone",
+        "wechat":"WeChat",
+        "intededMessage":"Inteded Message", 
+        "estimatedPurchaseQuantity":"Estimated Purchase Quantity",
+        "message":"Message"
+    },
+    "ContactInformation":{
+        "titleAddress":"Address",
+        "address":"APL Tower 26 Floor Unit T3 Central Park, Jl. Sparman 28, West Jakarta Jakarta 11470, Indonesia ",
+        "whatsappTitle":" Whatsapp/WeChat",
+        "whatsapp":"+6281119888802",
+        "wechat":" ben_josiah88",
+        "emailTitle":"Email"
+    },
+    "Notification":{
+        "success":" Thank You ",
+        "successMessage":"Your message has been sent successfully.",
+        "errorMessage":"An error occurred while sending the message. Please try again later.",
+        "button":"= Return to Homepage "
     }
 }

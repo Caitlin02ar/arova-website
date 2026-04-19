@@ -70,5 +70,71 @@
         "title":"供应能力",
         "description":"可为工业用途提供大批量供应,并可根据需求定制特殊规格.",
         "button":"下载产品规格书"
+    },
+    "Quality": [
+        {
+            "title": "一体化生产管理",
+            "points": [
+            "严选经验丰富的当地农户",
+            "标准化采收周期管理",
+            "自有蒸汽蒸馏工厂"
+            ]
+        },
+        {
+            "title": "品质控制体系",
+            "points": [
+            "自有仓储与规范化存储",
+            "每批次产品进行实验室检测",
+            "香气与成分稳定性控制"
+            ]
+        },
+        {
+            "title": "我们的品质保证",
+            "points": [
+            "批次之间高度一致",
+            "出口文件齐全（COA / MSDS 等）",
+            "满足国际客户采购标准"
+            ]
+        },
+        {
+            "title": "为什么选择 Arova",
+            "points": [
+            "印度尼西亚核心产区直供",
+            "品质可控、供应稳定",
+            "专业、透明、长期合作导向",
+            "适合规模化与持续采购"
+            ]
+        },
+        {
+            "titlePackaging":" 包装 ",
+            "descriptionPackaging":"我们的高品质广藿香精油采用耐用的塑胶桶包装，在储存与运输过程中有效保护产品品质。",
+            "disclaimer":"图片仅供参考* "
+        }
+    ],
+    "Client":{
+        "description":"我们在整个苏拉威西地区累计供应超过 10,000 公斤，品质与稳定性深受客户信赖。"
+    },
+    "Contact":{
+        "companyName":"公司名称 ",
+        "contactPerson":"联系人 ",
+        "email/Phone":"邮箱 / 电话 ",
+        "wechat":"WeChat",
+        "intededMessage":" 产品用途 ", 
+        "estimatedPurchaseQuantity":" 预计采购量",
+        "message":"留言 "
+    },
+    "ContactInformation":{
+        "titleAddress":"地址 ",
+        "address":"APL Tower 26 Floor Unit T3 Central Park, Jl. Sparman 28, West Jakarta Jakarta 11470, Indonesia ",
+        "whatsappTitle":" 微信",
+        "whatsapp":"+6281119888802",
+        "wechat":" ben_josiah88",
+        "emailTitle":"电子邮箱 "
+    },
+    "Notification":{
+        "success":" 谢谢 ",
+        "successMessage":"您的消息已成功发送 。",
+        "error":"发送信息时发生错误，请稍后再试。",
+        "button":"= 返回首页 "
     }
 }
