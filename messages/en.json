@@ -62,8 +62,14 @@
     },
 
     "ProductIngridients":{
-        "title":"",
-        "formula":""
+        "title1":"Patchouli alcohol (Patchoulol)",
+        "formula1":"C₁₅H₂₆O",
+        "title2":"Norpatchoulenol",
+        "formula2":"C₁₄H₂₄O",
+        "title3":"Pogostol",
+        "formula3":"C₁₅H₂₆O",
+        "title4":"Bulnesol",
+        "formula4":"C₁₅H₂₆O"
     },
     "ProductApply": {
         "title":"Typical Applications",
@@ -77,50 +83,62 @@
         "description":"Arova provides large quantities of supplies for industrial use and special specifications upon request.",
         "button":"Download Product Specification"
     },
-    "Quality": [
-        {
+    "Quality": {
+        "items": [
+            {
             "title": "Integrated Production",
             "points": [
-            "Strict selection of experienced local farmers",
-            "Standardized harvesting cycle management",
-            "In-house steam distillation facility"
+                "Strict selection of experienced local farmers",
+                "Standardized harvesting cycle management",
+                "In-house steam distillation facility"
             ]
-        },
-        {
+            },
+            {
             "title": "Quality Assurance",
             "points": [
-            "Own warehouse with standardized storage",
-            "Lab testing for every batch",
-            "Aroma and composition consistency control"
+                "Own warehouse with standardized storage",
+                "Lab testing for every batch",
+                "Aroma and composition consistency control"
             ]
-        },
-        {
+            },
+            {
             "title": "What We Guarantee",
             "points": [
-            "High consistency between batches",
-            "Complete export documentation (COA / MSDS)",
-            "Meets international procurement standards"
+                "High consistency between batches",
+                "Complete export documentation (COA / MSDS)",
+                "Meets international procurement standards"
             ]
+            },
+            {
+                "title": "Reliable Export Operations",
+                "points": [
+                    "Own warehouse facilities",
+                    "Secure bulk storage",
+                    "Export documentation support"
+                ]
+            }
+        ]
         },
-        {
-            "titleWhyChoose": "Why Choose Arova",
-            "pointsWhyChoose": [
-            "Direct supply from Indonesia core production areas",
-            "Controlled quality and stable supply",
-            "Professional, transparent, long-term partnership",
-            "Suitable for scalable and continuous procurement"
-            ]
-        },
-        {
-            "titlePackaging":"Packaging",
-            "descriptionPackaging":"Our high-grade patchouli oil is securely packaged in durable jerry cans designed to protect product quality during storage and transport.",
-            "disclaimer":"The picture used is for illustration purposes only*"
-        }
-    ],
+    "WhyChoose" :{
+        "titleWhyChoose": "Why Choose Arova",
+        "pointsWhyChoose": [
+            "Indonesian origin with strong reputation perfume",
+            "Consistent quality backed by testing",
+            "Transparent and professional trading partner",
+            "Scalable supply for long‑term cooperation"
+        ]
+    },
+    "Packaging":{
+        "titlePackaging":"Packaging",
+        "descriptionPackaging":"Our high-grade patchouli oil is securely packaged in durable jerry cans designed to protect product quality during storage and transport.",
+        "disclaimer":"The picture used is for illustration purposes only*"
+    },
+
     "Client":{
         "description":"With over 10,000 kilograms supplied across Sulawesi, our patchouli oil continues to be the preferred choice for quality and consistency."
     },
     "Contact":{
+        "title":"Contact Us", 
         "companyName":"Company Name",
         "contactPerson":"Contact Person",
         "email/Phone":"Email/Phone",
@@ -140,7 +158,8 @@
     "Notification":{
         "success":" Thank You ",
         "successMessage":"Your message has been sent successfully.",
-        "errorMessage":"An error occurred while sending the message. Please try again later.",
-        "button":"= Return to Homepage "
+        "errorMessage":"Page not found :/",
+        "button":"Back Home "
     }
+    
 }

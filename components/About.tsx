@@ -6,7 +6,7 @@ export default function About() {
     const t = useTranslations('About');
 
     return (
-        <section className="py-24 bg-[var(--color-cream-1)] overflow-hidden">
+        <section id='about' className="py-24 bg-[var(--color-cream-1)] overflow-hidden">
         
         <div className="grid grid-cols-10 items-center">
             

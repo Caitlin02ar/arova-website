@@ -1,6 +1,6 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
-import { locales } from '@/lib/i18n';
+import { routing } from '@/i18n/routing';
 import Navbar from '@/components/Navbar';
 
 export default async function LocaleLayout({
@@ -12,7 +12,7 @@ export default async function LocaleLayout({
     }) {
     const { locale } = await params; 
 
-    if (!locales.includes(locale)) notFound();
+    if (!routing.locales.includes(locale as any)) notFound();
 
     const messages = (await import(`../../messages/${locale}.json`)).default;
 

@@ -56,9 +56,16 @@
         "description": "我们的广藿香精油采用来自印尼苏拉威西的优质原料,经蒸汽蒸馏而成。产品广藿香醇(PA)含量达到30%及以上,相较于低PA含量产品,具有更浓 郁、更稳定且更高品质的香气表现"
     },
     "ProductIngridients":{
-        "title":"",
-        "formula":""
+        "title1":" 广藿香醇",
+        "formula1":"C15H26O",
+        "title2":"去甲广藿香醇",
+        "formula2":"C14H24O",
+        "title3":" 广藿香醇类",
+        "formula3":"C15H26O",
+        "title4":"布尔内醇",
+        "formula4":"C15H26O"
     },
+
     "ProductApply": {
         "title":"典型应用",
         "apply1":"香水与香精调香",
@@ -71,70 +78,81 @@
         "description":"可为工业用途提供大批量供应,并可根据需求定制特殊规格.",
         "button":"下载产品规格书"
     },
-    "Quality": [
-        {
+    "Quality": {
+        "items": [
+            {
             "title": "一体化生产管理",
             "points": [
-            "严选经验丰富的当地农户",
-            "标准化采收周期管理",
-            "自有蒸汽蒸馏工厂"
+                "严选经验丰富的当地农户",
+                "标准化采收周期管理",
+                "自有蒸汽蒸馏工厂"
             ]
-        },
-        {
+            },
+            {
             "title": "品质控制体系",
             "points": [
-            "自有仓储与规范化存储",
-            "每批次产品进行实验室检测",
-            "香气与成分稳定性控制"
+                "自有仓储与规范化存储",
+                "每批次产品进行实验室检测",
+                "香气与成分稳定性控制"
             ]
-        },
-        {
+            },
+            {
             "title": "我们的品质保证",
             "points": [
-            "批次之间高度一致",
-            "出口文件齐全（COA / MSDS 等）",
-            "满足国际客户采购标准"
+                "批次之间高度一致",
+                "出口文件齐全(COA / MSDS 等)",
+                "满足国际客户采购标准"
             ]
+            },
+            {
+                "title": "稳定可靠的出口运营",
+                "points": [
+                    "自有仓储设施",
+                    "安全的大宗货物仓储",
+                    "出口单证支持"
+                ]
+            }
+        ]
         },
-        {
-            "title": "为什么选择 Arova",
-            "points": [
+    "WhyChoose" :{
+        "titleWhyChoose": "为什么选择 Arova",
+        "pointsWhyChoose": [
             "印度尼西亚核心产区直供",
             "品质可控、供应稳定",
             "专业、透明、长期合作导向",
             "适合规模化与持续采购"
-            ]
-        },
-        {
-            "titlePackaging":" 包装 ",
-            "descriptionPackaging":"我们的高品质广藿香精油采用耐用的塑胶桶包装，在储存与运输过程中有效保护产品品质。",
-            "disclaimer":"图片仅供参考* "
-        }
-    ],
+        ]
+    },
+    "Packaging":{
+        "titlePackaging":"包装",
+        "descriptionPackaging":"“我们的高品质广藿香精油采用耐用的塑胶桶包装,在储存与运输过程中有 效保护产品品质。”",
+        "disclaimer":"图片仅供参考*"
+    },
     "Client":{
         "description":"我们在整个苏拉威西地区累计供应超过 10,000 公斤，品质与稳定性深受客户信赖。"
     },
     "Contact":{
+        "title":"联系我们",
         "companyName":"公司名称 ",
         "contactPerson":"联系人 ",
         "email/Phone":"邮箱 / 电话 ",
-        "wechat":"WeChat",
+        "wechat":"微信",
         "intededMessage":" 产品用途 ", 
         "estimatedPurchaseQuantity":" 预计采购量",
         "message":"留言 "
     },
     "ContactInformation":{
         "titleAddress":"地址 ",
-        "address":"APL Tower 26 Floor Unit T3 Central Park, Jl. Sparman 28, West Jakarta Jakarta 11470, Indonesia ",
-        "whatsappTitle":" 微信",
-        "whatsapp":"+6281119888802",
+        "address":"APL Tower 26 Floor Unit T3 \nCentral Park, Jl. Sparman 28, West Jakarta \nJakarta 11470, Indonesia ",
+        "whatsappTitle":" WhatsApp  / 微信（如适用)",
+        "whatsapp":"++62-811-1988-8802 / ben_josiah88",
         "wechat":" ben_josiah88",
         "emailTitle":"电子邮箱 "
     },
     "Notification":{
         "success":" 谢谢 ",
-        "successMessage":"您的消息已成功发送 。",
-        "error":"发送信息时发生错误，请稍后再试。",
-        "button":"= 返回首页 "
+        "successMessage":"您的消息已成功发送",
+        "errorMessage":"找不到页面",
+        "button":"返回首页 "
     }
 }

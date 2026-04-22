@@ -16,10 +16,9 @@ type ButtonProps = {
     const styles = {
         dark: 'border-[var(--color-dark-green)] text-[var(--color-dark-green)] hover:bg-[var(--color-dark-green)] hover:text-white',
         light: 'border-white text-white hover:bg-white hover:text-black',
-        green: 'border-[var(--color-lime-green)] text-[var(--color-lime-green)] hover:bg-[var(--color-lime-green)] hover:text-black',
+        green: 'bg-[var(--color-lime-green)] border-[var(--color-lime-green)] text-[var(--color-dark-green)] hover:bg-[var(--color-cream-1)] hover:text-[var(--color-dark-green)] hover:border-[var(--color-cream-1)]',
     };
 
-    // 🎯 ICON RENDER
     const renderIcon = () => {
         if (icon === 'arrow') return <span>→</span>;
 

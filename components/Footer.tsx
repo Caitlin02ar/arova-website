@@ -1,42 +1,43 @@
 "use client";
 
 import Link from "next/link";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 export default function Footer() {
     const t = useTranslations("Footer");
+    const locale = useLocale();
+    console.log("Current locale in Footer:", locale); // Debug log to check the current locale
+
 
     return (
         <footer className="bg-[var(--color-cream-1)] text-sm">
-
-            {/* ── DESKTOP ── */}
-            <div className="hidden md:grid md:grid-cols-[1.5fr_1fr_1fr_1fr_1fr_1fr_2fr] gap-y-6 px-12 pt-16 pb-30 text-left">
+            <div className="hidden md:grid md:grid-cols-[1.5fr_1fr_1fr_1.5fr_1fr_1fr_2fr] gap-y-6 px-12 pt-16 pb-30 text-left">
                 <div>
                     <img src="/logo/Logo Arova - Black.png" alt="Arova Logo" className="h-10 w-auto" />
                 </div>
                 <div>
-                    <h4 className="font-semibold mb-2 text-dark-green">{t("home")}</h4>
-                    <Link href="/about" className="block text-[var(--color-dis)] hover:text-dark-green">{t("about")}</Link>
+                    <h4 className="font-bold mb-2 text-dark-green text-[1rem] font-heading">{t("home")}</h4>
+                    <Link href={`/${locale}#about`} className="block text-[var(--color-dis)] hover:text-dark-green font-heading">{t("about")}</Link>
                 </div>
                 <div>
-                    <h4 className="font-semibold mb-2 text-dark-green">{t("ourProduct")}</h4>
-                    <p className="text-[var(--color-dis)]">{t("patchouliOil")}</p>
+                    <h4 className="font-bold mb-2 text-dark-green text-[1rem] font-heading">{t("ourProduct")}</h4>
+                    <p className="text-[var(--color-dis)] font-sans">{t("patchouliOil")}</p>
                 </div>
                 <div>
-                    <h4 className="font-semibold mb-2 text-dark-green">{t("qualityProduct")}</h4>
-                    <p className="text-[var(--color-dis)]">{t("integratedProduction")}</p>
-                    <p className="text-[var(--color-dis)]">{t("qualityAssurance")}</p>
-                    <p className="text-[var(--color-dis)]">{t("guarantee")}</p>
-                    <p className="text-[var(--color-dis)]">{t("reliableExport")}</p>
+                    <h4 className="font-semibold mb-2 text-dark-green text-[1rem] font-heading">{t("qualityProduct")}</h4>
+                    <p className="text-[var(--color-dis)] font-sans">{t("integratedProduction")}</p>
+                    <p className="text-[var(--color-dis)] font-sans">{t("qualityAssurance")}</p>
+                    <p className="text-[var(--color-dis)] font-sans">{t("guarantee")}</p>
+                    <p className="text-[var(--color-dis)] font-sans">{t("reliableExport")}</p>
                 </div>
                 <div>
-                    <h4 className="font-semibold mb-2 text-dark-green">{t("client")}</h4>
-                    <p className="text-[var(--color-dis)]">{t("district")}</p>
+                    <h4 className="font-semibold mb-2 text-dark-green text-[1rem] font-heading">{t("client")}</h4>
+                    <p className="text-[var(--color-dis)] font-sans">{t("district")}</p>
                 </div>
                 <div>
-                    <h4 className="font-semibold mb-2 text-dark-green">{t("contact")}</h4>
-                    <p className="text-[var(--color-dis)]">{t("contactUs")}</p>
-                    <p className="text-[var(--color-dis)]">{t("office")}</p>
+                    <h4 className="font-semibold mb-2 text-dark-green text-[1rem] font-heading">{t("contact")}</h4>
+                    <p className="text-[var(--color-dis)] font-sans">{t("contactUs")}</p>
+                    <p className="text-[var(--color-dis)] font-sans">{t("office")}</p>
                 </div>
                 <div>
                     <p className="text-black whitespace-nowrap">{t("address1")}</p>

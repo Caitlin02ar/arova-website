@@ -18,7 +18,7 @@ export default function ProductSupply(){
                             {t("description")}
                         </p>
                         <div className="pt-8">
-                            <Button href="#" variant="dark">
+                            <Button href="#" variant="dark" icon="download">
                                 {t("button")}
                             </Button>
                         </div>
