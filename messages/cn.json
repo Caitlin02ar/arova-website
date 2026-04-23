@@ -81,6 +81,7 @@
     "Quality": {
         "items": [
             {
+            "id":"integrated-production",
             "title": "一体化生产管理",
             "points": [
                 "严选经验丰富的当地农户",
@@ -89,6 +90,7 @@
             ]
             },
             {
+            "id":"quality-assurance",
             "title": "品质控制体系",
             "points": [
                 "自有仓储与规范化存储",
@@ -97,6 +99,7 @@
             ]
             },
             {
+            "id":"we-guarantee",
             "title": "我们的品质保证",
             "points": [
                 "批次之间高度一致",
@@ -105,6 +108,7 @@
             ]
             },
             {
+                "id":"reliable-export",
                 "title": "稳定可靠的出口运营",
                 "points": [
                     "自有仓储设施",
@@ -129,7 +133,7 @@
         "disclaimer":"图片仅供参考*"
     },
     "Client":{
-        "description":"我们在整个苏拉威西地区累计供应超过 10,000 公斤，品质与稳定性深受客户信赖。"
+        "description": "<bold>我们已在苏拉威西供应超过10,000公斤，</bold>并持续扩展我们的可信网络。"
     },
     "Contact":{
         "title":"联系我们",

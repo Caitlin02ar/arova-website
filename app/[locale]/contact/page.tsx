@@ -23,7 +23,7 @@ export default function ContactPage() {
             <div className="w-full md:w-[60%] flex flex-col">
 
             {/* Section 1: Contact Form — lime green */}
-            <section className="min-h-screen bg-[var(--color-mint-green)] px-10 md:px-16 py-24 flex flex-col justify-center mt-12">
+            <section id="contact-us" className="min-h-screen bg-[var(--color-mint-green)] px-10 md:px-16 py-24 flex flex-col justify-center mt-12">
                 <h1 className="font-heading text-2xl md:text-3xl font-semibold mb-10">
                 {t("title") || "Contact Us"}
                 </h1>
@@ -73,7 +73,7 @@ export default function ContactPage() {
                 </form>
             </section>
 
-            <section className="min-h-screen bg-[var(--color-dark-green)] text-[var(--color-cream-1)] px-10 md:px-16 py-24 flex flex-col justify-center gap-10">
+            <section id="office" className="min-h-screen bg-[var(--color-dark-green)] text-[var(--color-cream-1)] px-10 md:px-16 py-24 flex flex-col justify-center gap-10">
                 <h2 className="font-[var(--font-heading)] text-2xl md:text-3xl font-semibold">
                 The Office
                 </h2>

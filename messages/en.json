@@ -86,6 +86,7 @@
     "Quality": {
         "items": [
             {
+            "id":"integrated-production",
             "title": "Integrated Production",
             "points": [
                 "Strict selection of experienced local farmers",
@@ -94,6 +95,7 @@
             ]
             },
             {
+            "id":"quality-assurance",
             "title": "Quality Assurance",
             "points": [
                 "Own warehouse with standardized storage",
@@ -102,6 +104,7 @@
             ]
             },
             {
+            "id":"we-guarantee",
             "title": "What We Guarantee",
             "points": [
                 "High consistency between batches",
@@ -110,6 +113,7 @@
             ]
             },
             {
+                "id":"reliable-export",
                 "title": "Reliable Export Operations",
                 "points": [
                     "Own warehouse facilities",
@@ -135,7 +139,7 @@
     },
 
     "Client":{
-        "description":"With over 10,000 kilograms supplied across Sulawesi, our patchouli oil continues to be the preferred choice for quality and consistency."
+        "description": "<bold>With over 10,000 kilograms supplied across Sulawesi,</bold> we continue to expand our trusted network across regions."    
     },
     "Contact":{
         "title":"Contact Us", 

@@ -21,23 +21,24 @@ export default function Footer() {
                 </div>
                 <div>
                     <h4 className="font-bold mb-2 text-dark-green text-[1rem] font-heading">{t("ourProduct")}</h4>
-                    <p className="text-[var(--color-dis)] font-sans">{t("patchouliOil")}</p>
+                    <Link href={`/${locale}/product#product-section`} className="block text-[var(--color-dis)] hover:text-dark-green font-heading">{t("patchouliOil")}</Link>
                 </div>
                 <div>
                     <h4 className="font-semibold mb-2 text-dark-green text-[1rem] font-heading">{t("qualityProduct")}</h4>
-                    <p className="text-[var(--color-dis)] font-sans">{t("integratedProduction")}</p>
-                    <p className="text-[var(--color-dis)] font-sans">{t("qualityAssurance")}</p>
-                    <p className="text-[var(--color-dis)] font-sans">{t("guarantee")}</p>
-                    <p className="text-[var(--color-dis)] font-sans">{t("reliableExport")}</p>
+                    <Link href={`/${locale}/quality#integrated-production`} className="block text-[var(--color-dis)] hover:text-dark-green font-heading">{t("integratedProduction")}</Link>
+                    <Link href={`/${locale}/quality#quality-assurance`} className="block text-[var(--color-dis)] hover:text-dark-green font-heading">{t("qualityAssurance")}</Link>
+                    <Link href={`/${locale}/quality#we-guarantee`} className="block text-[var(--color-dis)] hover:text-dark-green font-heading">{t("guarantee")}</Link>
+                    <Link href={`/${locale}/quality#reliable-export`} className="block text-[var(--color-dis)] hover:text-dark-green font-heading">{t("reliableExport")}</Link>
                 </div>
                 <div>
                     <h4 className="font-semibold mb-2 text-dark-green text-[1rem] font-heading">{t("client")}</h4>
-                    <p className="text-[var(--color-dis)] font-sans">{t("district")}</p>
+                    {/* <p className="text-[var(--color-dis)] font-sans">{t("district")}</p> */}
+                    <Link href={`/${locale}/client#client`} className="block text-[var(--color-dis)] hover:text-dark-green font-heading">{t("district")}</Link>
                 </div>
                 <div>
                     <h4 className="font-semibold mb-2 text-dark-green text-[1rem] font-heading">{t("contact")}</h4>
-                    <p className="text-[var(--color-dis)] font-sans">{t("contactUs")}</p>
-                    <p className="text-[var(--color-dis)] font-sans">{t("office")}</p>
+                    <Link href={`/${locale}/contact#contact-us`} className="block text-[var(--color-dis)] hover:text-dark-green font-heading">{t("contactUs")}</Link>
+                    <Link href={`/${locale}/contact#office`} className="block text-[var(--color-dis)] hover:text-dark-green font-heading">{t("office")}</Link>
                 </div>
                 <div>
                     <p className="text-black whitespace-nowrap">{t("address1")}</p>
@@ -56,23 +57,23 @@ export default function Footer() {
                         </div>
                         <div>
                             <h4 className="font-semibold mb-1 text-dark-green">{t("ourProduct")}</h4>
-                            <p className="text-[var(--color-dis)]">{t("patchouliOil")}</p>
+                            <Link href={`/${locale}/product#product-section`} className="block text-[var(--color-dis)] hover:text-dark-green font-heading">{t("patchouliOil")}</Link>
                         </div>
                         <div>
                             <h4 className="font-semibold mb-1 text-dark-green">{t("qualityProduct")}</h4>
-                            <p className="text-[var(--color-dis)]">{t("integratedProduction")}</p>
-                            <p className="text-[var(--color-dis)]">{t("qualityAssurance")}</p>
-                            <p className="text-[var(--color-dis)]">{t("guarantee")}</p>
-                            <p className="text-[var(--color-dis)]">{t("reliableExport")}</p>
+                            <Link href={`/${locale}/quality#integrated-production`} className="block text-[var(--color-dis)] hover:text-dark-green font-heading">{t("integratedProduction")}</Link>
+                            <Link href={`/${locale}/quality#quality-assurance`} className="block text-[var(--color-dis)] hover:text-dark-green font-heading">{t("qualityAssurance")}</Link>
+                            <Link href={`/${locale}/quality#we-guarantee`} className="block text-[var(--color-dis)] hover:text-dark-green font-heading">{t("guarantee")}</Link>
+                            <Link href={`/${locale}/quality#reliable-export`} className="block text-[var(--color-dis)] hover:text-dark-green font-heading">{t("reliableExport")}</Link>
                         </div>
                         <div>
                             <h4 className="font-semibold mb-1 text-dark-green">{t("client")}</h4>
-                            <p className="text-[var(--color-dis)]">{t("district")}</p>
+                            <Link href={`/${locale}/client#client`} className="block text-[var(--color-dis)] hover:text-dark-green font-heading">{t("district")}</Link>
                         </div>
                         <div>
                             <h4 className="font-semibold mb-1 text-dark-green">{t("contact")}</h4>
-                            <p className="text-[var(--color-dis)]">{t("contactUs")}</p>
-                            <p className="text-[var(--color-dis)]">{t("office")}</p>
+                            <Link href={`/${locale}/contact#contact-us`} className="block text-[var(--color-dis)] hover:text-dark-green font-heading">{t("contactUs")}</Link>
+                            <Link href={`/${locale}/contact#office`} className="block text-[var(--color-dis)] hover:text-dark-green font-heading">{t("office")}</Link>
                         </div>
                         <div>
                             <p className="text-black">{t("address1")}</p>
@@ -91,9 +92,24 @@ export default function Footer() {
                 <p>{t("copyright")}</p>
                 <button
                     onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-                    className="text-[1rem] hover:opacity-70">
-                    {t("backToTop")} ↑
-                </button>
+                    className="flex items-center gap-2 text-[1rem] hover:opacity-70"
+                    >
+                    {t("backToTop")}
+
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="3"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                    >
+                        <path d="m18 15-6-6-6 6" />
+                    </svg>
+                    </button>
             </div>
         </footer>
     );
