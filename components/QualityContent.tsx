@@ -14,7 +14,7 @@ export default function QualityContent() {
     const items = t.raw("items") as QualityItem[];
 
     return (
-        <section className="px-32 py-20 bg-[var(--color-cream-1)]">
+        <section className="px-6 md:px-32 py-20 bg-[var(--color-cream-1)] pb-4">
         {items.map((item, index) => (
             <motion.div
                 id={item.id}
@@ -27,12 +27,12 @@ export default function QualityContent() {
                     delay: 0.1,
                 }}
                 viewport={{ once: true, amount: 0.3 }}
-                className={`py-10 flex gap-120 flex items-center ${
+                className={`py-10 flex items-center gap-10 md:gap-120 ${
                     index !== items.length - 1 ? "border-b border-[var(--color-dark-green)]" : ""
                 }`}
             >
                 {/* Number */}
-                <div className="text-[150px] font-semibold text-lime-green font-heading w-[120px]">
+                <div className="text-[60px] md:text-[150px] font-medium text-lime-green font-heading w-[80px] md:w-[120px] min-w-[80px] md:min-w-[120px] shrink-0 leading-none">
                     {(index + 1).toString().padStart(2, "0")}
                 </div>
 

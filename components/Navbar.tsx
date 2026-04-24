@@ -71,7 +71,7 @@ export default function Navbar() {
                             key={item.key}
                             href={href}
                             className={`text-md transition font-heading font-light ${
-                                isActive ? 'font-medium' : 'opacity-80 hover:opacity-100'
+                            isActive ? (locale === 'cn' ? 'font-semibold' : 'font-medium') : 'opacity-80 hover:opacity-100'
                             }`}>
                             {t(item.key)}
                         </Link>
@@ -125,13 +125,12 @@ export default function Navbar() {
                                         duration: 0.4,
                                         ease: [0.25, 1, 0.5, 1],
                                         delay: 0.1 + index * 0.07,
-                                    }}
-                                >
+                                    }}>
                                     <Link
                                         href={href}
                                         onClick={() => setMenuOpen(false)}
                                         className={`flex items-center justify-between py-5 border-b border-[var(--color-dark-green)] font-heading text-xl ${
-                                            isActive ? 'font-medium' : 'font-light'
+                                            isActive ? (locale === 'cn' ? 'font-semibold' : 'font-medium') : 'font-light'
                                         }`}>
                                         <span>{t(item.key)}</span>
                                         <span className="text-lg">→</span>

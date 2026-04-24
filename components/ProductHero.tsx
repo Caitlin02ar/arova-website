@@ -8,14 +8,17 @@ export default function ProductHero() {
 
     return(
         <motion.section
-            id = "product-section"
+            id="product-section"
             initial={{ opacity: 0, scale: 1 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
-            className="relative h-[500px] bg-no-repeat bg-cover flex items-center justify-start text-dark-green"
-            style={{ backgroundImage: "url('/photos/Product Hero - BG.png')" }}>
+            className="relative h-[500px] bg-no-repeat bg-cover 
+           bg-[position:30%_center]        {/* mobile: geser ke kanan 80% */}
+           md:bg-[position:center_center]  {/* desktop: tengah */}
+           flex items-end justify-start md:items-center text-dark-green"
+            style={{ backgroundImage: "url('/photos/Product Hero - BG.webp')" }}>
             
-            <div className="description p-24 pt-36">
+            <div className="description p-6 pb-8 md:p-24 md:pt-36">
                 <div className="subheadline-section">
                     <span className="italic text-heading">{t("subheadline")}</span>
                 </div>
@@ -30,7 +33,7 @@ export default function ProductHero() {
                     </motion.h1>
                 </div>
                 <div className="description-hero">
-                    <p className="w-[40%]">{t("description")}</p>
+                    <p className="w-full md:w-[40%] text-sm md:text-base">{t("description")}</p>
                 </div>
             </div>
         </motion.section>

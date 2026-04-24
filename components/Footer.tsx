@@ -6,8 +6,7 @@ import { useTranslations, useLocale } from "next-intl";
 export default function Footer() {
     const t = useTranslations("Footer");
     const locale = useLocale();
-    console.log("Current locale in Footer:", locale); // Debug log to check the current locale
-
+    const headingWeight = locale === 'cn' ? 'font-semibold' : 'font-medium';
 
     return (
         <footer className="bg-[var(--color-cream-1)] text-sm">
@@ -16,27 +15,26 @@ export default function Footer() {
                     <img src="/logo/Logo Arova - Black.png" alt="Arova Logo" className="h-10 w-auto" />
                 </div>
                 <div>
-                    <h4 className="font-bold mb-2 text-dark-green text-[1rem] font-heading">{t("home")}</h4>
+                    <h4 className={`${headingWeight} mb-2 text-dark-green text-[1rem] font-heading`}>{t("home")}</h4>
                     <Link href={`/${locale}#about`} className="block text-[var(--color-dis)] hover:text-dark-green font-heading">{t("about")}</Link>
                 </div>
                 <div>
-                    <h4 className="font-bold mb-2 text-dark-green text-[1rem] font-heading">{t("ourProduct")}</h4>
+                    <h4 className={`${headingWeight} mb-2 text-dark-green text-[1rem] font-heading`}>{t("ourProduct")}</h4>
                     <Link href={`/${locale}/product#product-section`} className="block text-[var(--color-dis)] hover:text-dark-green font-heading">{t("patchouliOil")}</Link>
                 </div>
                 <div>
-                    <h4 className="font-semibold mb-2 text-dark-green text-[1rem] font-heading">{t("qualityProduct")}</h4>
+                    <h4 className={`${headingWeight} mb-2 text-dark-green text-[1rem] font-heading`}>{t("qualityProduct")}</h4>
                     <Link href={`/${locale}/quality#integrated-production`} className="block text-[var(--color-dis)] hover:text-dark-green font-heading">{t("integratedProduction")}</Link>
                     <Link href={`/${locale}/quality#quality-assurance`} className="block text-[var(--color-dis)] hover:text-dark-green font-heading">{t("qualityAssurance")}</Link>
                     <Link href={`/${locale}/quality#we-guarantee`} className="block text-[var(--color-dis)] hover:text-dark-green font-heading">{t("guarantee")}</Link>
                     <Link href={`/${locale}/quality#reliable-export`} className="block text-[var(--color-dis)] hover:text-dark-green font-heading">{t("reliableExport")}</Link>
                 </div>
                 <div>
-                    <h4 className="font-semibold mb-2 text-dark-green text-[1rem] font-heading">{t("client")}</h4>
-                    {/* <p className="text-[var(--color-dis)] font-sans">{t("district")}</p> */}
+                    <h4 className={`${headingWeight} mb-2 text-dark-green text-[1rem] font-heading`}>{t("client")}</h4>
                     <Link href={`/${locale}/client#client`} className="block text-[var(--color-dis)] hover:text-dark-green font-heading">{t("district")}</Link>
                 </div>
                 <div>
-                    <h4 className="font-semibold mb-2 text-dark-green text-[1rem] font-heading">{t("contact")}</h4>
+                    <h4 className={`${headingWeight} mb-2 text-dark-green text-[1rem] font-heading`}>{t("contact")}</h4>
                     <Link href={`/${locale}/contact#contact-us`} className="block text-[var(--color-dis)] hover:text-dark-green font-heading">{t("contactUs")}</Link>
                     <Link href={`/${locale}/contact#office`} className="block text-[var(--color-dis)] hover:text-dark-green font-heading">{t("office")}</Link>
                 </div>
@@ -52,26 +50,26 @@ export default function Footer() {
                 <div className="flex justify-between items-start gap-4">
                     <div className="flex flex-col gap-5 flex-1">
                         <div>
-                            <h4 className="font-semibold mb-1 text-dark-green">{t("home")}</h4>
+                            <h4 className={`${headingWeight} mb-1 text-dark-green`}>{t("home")}</h4>
                             <Link href="/about" className="block text-[var(--color-dis)] hover:text-dark-green">{t("about")}</Link>
                         </div>
                         <div>
-                            <h4 className="font-semibold mb-1 text-dark-green">{t("ourProduct")}</h4>
+                            <h4 className={`${headingWeight} mb-1 text-dark-green`}>{t("ourProduct")}</h4>
                             <Link href={`/${locale}/product#product-section`} className="block text-[var(--color-dis)] hover:text-dark-green font-heading">{t("patchouliOil")}</Link>
                         </div>
                         <div>
-                            <h4 className="font-semibold mb-1 text-dark-green">{t("qualityProduct")}</h4>
+                            <h4 className={`${headingWeight} mb-1 text-dark-green`}>{t("qualityProduct")}</h4>
                             <Link href={`/${locale}/quality#integrated-production`} className="block text-[var(--color-dis)] hover:text-dark-green font-heading">{t("integratedProduction")}</Link>
                             <Link href={`/${locale}/quality#quality-assurance`} className="block text-[var(--color-dis)] hover:text-dark-green font-heading">{t("qualityAssurance")}</Link>
                             <Link href={`/${locale}/quality#we-guarantee`} className="block text-[var(--color-dis)] hover:text-dark-green font-heading">{t("guarantee")}</Link>
                             <Link href={`/${locale}/quality#reliable-export`} className="block text-[var(--color-dis)] hover:text-dark-green font-heading">{t("reliableExport")}</Link>
                         </div>
                         <div>
-                            <h4 className="font-semibold mb-1 text-dark-green">{t("client")}</h4>
+                            <h4 className={`${headingWeight} mb-1 text-dark-green`}>{t("client")}</h4>
                             <Link href={`/${locale}/client#client`} className="block text-[var(--color-dis)] hover:text-dark-green font-heading">{t("district")}</Link>
                         </div>
                         <div>
-                            <h4 className="font-semibold mb-1 text-dark-green">{t("contact")}</h4>
+                            <h4 className={`${headingWeight} mb-1 text-dark-green`}>{t("contact")}</h4>
                             <Link href={`/${locale}/contact#contact-us`} className="block text-[var(--color-dis)] hover:text-dark-green font-heading">{t("contactUs")}</Link>
                             <Link href={`/${locale}/contact#office`} className="block text-[var(--color-dis)] hover:text-dark-green font-heading">{t("office")}</Link>
                         </div>
@@ -95,7 +93,6 @@ export default function Footer() {
                     className="flex items-center gap-2 text-[1rem] hover:opacity-70"
                     >
                     {t("backToTop")}
-
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -109,7 +106,7 @@ export default function Footer() {
                     >
                         <path d="m18 15-6-6-6 6" />
                     </svg>
-                    </button>
+                </button>
             </div>
         </footer>
     );

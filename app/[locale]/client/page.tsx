@@ -26,31 +26,30 @@ const locations = [
 
     const [hoveredId, setHoveredId] = useState<number | null>(null);
 
-    // ✅ MULTI-LANGUAGE BOLD (FINAL FIX)
     const description = t.rich("description", {
-        bold: (chunks) => (
-        <motion.span
-            className="font-extrabold text-[var(--color-dark-green)]"
-            initial={{ opacity: 0.3, fontWeight: 400 }}
-            animate={isTextInView ? { opacity: 1, fontWeight: 500 } : {}}
-            transition={{ duration: 0.8, delay: 1.2, ease: "easeOut" }}
-        >
-            {chunks}
-        </motion.span>
-        ),
+   bold: (chunks) => (
+    <motion.span
+        className="inline"
+        style={{ color: "var(--color-dark-green)" }}
+        initial={{ fontWeight: 400 }}
+        animate={isTextInView ? { fontWeight: 600 } : {}}
+        transition={{ duration: 0.5, delay: 0.5, ease: "easeOut" }}
+    >
+        {chunks}
+    </motion.span>
+),
     });
 
     return (
         <main className="bg-[var(--color-cream-1)] text-[var(--color-dark-green)]">
 
-        {/* TEXT SECTION */}
         <section
             id="client"
-            className="flex flex-col items-center justify-center px-6 pt-40 pb-4"
+            className="flex flex-col items-center justify-center px-6 pt-24 md:pt-40 pb-4"
         >
             <div
             ref={textRef}
-            className="text-center text-2xl md:text-[1.75rem] font-heading leading-snug max-w-3xl"
+            className="text-center text-xl md:text-[1.75rem] font-heading leading-snug max-w-3xl"
             >
             <motion.div
                 initial={{ opacity: 0 }}

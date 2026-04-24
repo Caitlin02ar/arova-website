@@ -89,27 +89,27 @@
             "id":"integrated-production",
             "title": "Integrated Production",
             "points": [
-                "Strict selection of experienced local farmers",
-                "Standardized harvesting cycle management",
-                "In-house steam distillation facility"
+                "Selected experienced farmers",
+                "Controlled harvesting cycles",
+                "Steam distillation process"
             ]
             },
             {
             "id":"quality-assurance",
             "title": "Quality Assurance",
             "points": [
-                "Own warehouse with standardized storage",
-                "Lab testing for every batch",
-                "Aroma and composition consistency control"
+                "In‑house storage and handling",
+                "Laboratory testing for each batch",
+                "Consistent aroma and composition control"
             ]
             },
             {
             "id":"we-guarantee",
             "title": "What We Guarantee",
             "points": [
-                "High consistency between batches",
-                "Complete export documentation (COA / MSDS)",
-                "Meets international procurement standards"
+                "Stable quality across shipments",
+                "Export‑ready documentation",
+                "Compliance with international buyer requirements"
             ]
             },
             {
@@ -153,7 +153,7 @@
     },
     "ContactInformation":{
         "titleAddress":"Address",
-        "address":"APL Tower 26 Floor Unit T3 Central Park, Jl. Sparman 28, West Jakarta Jakarta 11470, Indonesia ",
+        "address":"APL Tower 26 Floor Unit T3 \nCentral Park, Jl. Sparman 28, West Jakarta \nJakarta 11470, Indonesia ",
         "whatsappTitle":" Whatsapp/WeChat",
         "whatsapp":"+6281119888802",
         "wechat":" ben_josiah88",

@@ -10,13 +10,23 @@ export default function WhyChoose(){
     const t = useTranslations("WhyChoose");
     return(
         <main>
-            <div className="hero-quality aspect-video w-full h-[90vh]">
-                <img src="/photos/3d-cargo-container-ship-sea.jpeg" alt="" className="w-full h-full object-cover" />
+            <div className="hero-quality w-full h-[60vh] md:h-[90vh]">
+                <img
+                    src="/photos/3d-cargo-container-ship-sea.jpeg"
+                    alt=""
+                    className="w-full h-full object-contain md:object-cover"
+                />
             </div>
-            <h1 className="font-heading text-[1.35rem] flex items-center justify-center mt-12 font-medium">{t("titleWhyChoose")}</h1>
-            <div className="card flex gap-8 items-center justify-center p-12 pt-6">
+               <div className="max-w-6xl mx-auto px-8">
+                <h1 className="font-heading text-[1.35rem] mt-12 font-medium text-left md:text-center">
+                    {t("titleWhyChoose")}
+                </h1>     
+            </div>
+            <div className="card flex gap-8 items-center justify-center p-8 pt-2">
                 <QualityCard/>
             </div>
+
+            {/* Packaging teks + gambar dalam satu section, teks pakai container yang sama */}
             <Packaging/>
             <CTA/>
             <Footer/>

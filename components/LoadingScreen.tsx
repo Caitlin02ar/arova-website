@@ -12,10 +12,10 @@ export default function LoadingScreen({
 
     useEffect(() => {
         const timer = setTimeout(() => {
-            setFadeOut(true); // mulai fade
+            setFadeOut(true);
             setTimeout(() => {
-                setLoading(false); // baru hilang
-            }, 500); // sesuai duration CSS
+                setLoading(false);
+            }, 500);
         }, 3000);
 
         return () => clearTimeout(timer);
@@ -24,16 +24,26 @@ export default function LoadingScreen({
     if (loading) {
         return (
             <div
-                className={`fixed inset-0 z-[9999] transition-opacity duration-500 ${
+                className={`fixed inset-0 z-[9999] transition-opacity duration-500 bg-[var(--color-cream-1)] ${
                     fadeOut ? 'opacity-0' : 'opacity-100'
                 }`}
             >
+                {/* Desktop */}
                 <video
                     src="/video/Loading Page - Transparent.webm"
                     autoPlay
                     muted
                     playsInline
-                    className="absolute inset-0 w-full h-full object-cover"
+                    className="hidden md:block absolute inset-0 w-full h-full object-cover"
+                />
+                {/* Mobile */}
+                <video
+                    src="/video/Loading Page - Transparent.webm"
+                    autoPlay
+                    muted
+                    playsInline
+                    className="md:hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                    style={{ minWidth: '120vw', minHeight: '120vw' }}
                 />
             </div>
         );
