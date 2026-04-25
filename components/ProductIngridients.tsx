@@ -90,7 +90,7 @@ export default function ProductIngridients() {
   const refDesktop = useRef<HTMLDivElement>(null);
   const refMobile = useRef<HTMLDivElement>(null);
   const isInViewDesktop = useInView(refDesktop, { once: true, margin: "-30%" });
-  const isInViewMobile = useInView(refMobile, { once: true, amount: 0.5 });
+  const isInViewMobile = useInView(refMobile, { once: true, amount: 0.4 });
 
   const CX = 400;
   const CY = 240;
