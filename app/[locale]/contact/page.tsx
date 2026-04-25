@@ -188,22 +188,18 @@ ${form.message}
                         </span>
                     </button>
                 </div>
-
                 </form>
             </section>
-
             <section id="office" className="min-h-screen bg-[var(--color-dark-green)] text-[var(--color-cream-1)] px-10 md:px-16 py-24 flex flex-col justify-center gap-10">
                 <h2 className="font-[var(--font-heading)] text-2xl md:text-3xl font-semibold">
                 The Office
                 </h2>
-
                 <div className="flex flex-col gap-2">
                 <p className="font-semibold text-md tracking-wide">{tInfo("titleAddress")}</p>
                 <p className="text-md leading-relaxed whitespace-pre-line opacity-80">
                     {tInfo("address")}
                 </p>
                 </div>
-
                 <div className="flex flex-col gap-2">
                 <p className="font-semibold text-md tracking-wide">{tInfo("whatsappTitle")}</p>
                 <a 
@@ -219,10 +215,9 @@ ${form.message}
 
                 <div className="flex flex-col gap-2">
                 <p className="font-semibold text-md tracking-wide">{tInfo("emailTitle")}</p>
-                <p className="text-md opacity-80">Ben.Josiah.Mail@Gmail.Com</p>
+                <p className="text-md opacity-80">{tInfo("email")}</p>
                 </div>
             </section>
-
             </div>
         </div>
 

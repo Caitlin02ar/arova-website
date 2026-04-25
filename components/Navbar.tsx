@@ -54,11 +54,13 @@ export default function Navbar() {
 
             {/* Logo */}
             <div className="flex-shrink-0">
-                <img
-                    src={isLight ? '/logo/Logo Arova - White.png' : '/logo/Logo Arova - Dark Green.png'}
-                    alt="Arova Logo"
-                    className="h-8 md:h-10 w-auto transition-all duration-500 ease-in-out"
-                />
+                <Link href={`/${locale}`}>
+                    <img
+                        src={isLight ? '/logo/Logo Arova - White.png' : '/logo/Logo Arova - Dark Green.png'}
+                        alt="Arova Logo"
+                        className="h-8 md:h-10 w-auto transition-all duration-500 ease-in-out"
+                    />
+                </Link>
             </div>
 
             {/* Desktop nav - center */}

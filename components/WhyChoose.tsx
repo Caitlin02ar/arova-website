@@ -10,11 +10,11 @@ export default function WhyChoose(){
     const t = useTranslations("WhyChoose");
     return(
         <main>
-            <div className="hero-quality w-full h-[60vh] md:h-[90vh]">
+            <div className="hero-quality w-full">
                 <img
-                    src="/photos/3d-cargo-container-ship-sea.jpeg"
+                    src="/photos/3d-cargo-container-ship-sea.webp"
                     alt=""
-                    className="w-full h-full object-contain md:object-cover"
+                    className="w-full md:h-[95vh] object-contain md:object-cover"
                 />
             </div>
                <div className="max-w-6xl mx-auto px-8">
@@ -25,8 +25,6 @@ export default function WhyChoose(){
             <div className="card flex gap-8 items-center justify-center p-8 pt-2">
                 <QualityCard/>
             </div>
-
-            {/* Packaging teks + gambar dalam satu section, teks pakai container yang sama */}
             <Packaging/>
             <CTA/>
             <Footer/>

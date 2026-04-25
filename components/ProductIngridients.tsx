@@ -87,8 +87,10 @@ function MobileLabel({ formula, title, delay }: { formula: string; title: string
 
 export default function ProductIngridients() {
   const t = useTranslations("ProductIngridients");
-  const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { once: true, margin: "-30%" });
+  const refDesktop = useRef<HTMLDivElement>(null);
+  const refMobile = useRef<HTMLDivElement>(null);
+  const isInViewDesktop = useInView(refDesktop, { once: true, margin: "-30%" });
+  const isInViewMobile = useInView(refMobile, { once: true, amount: 0.5 });
 
   const CX = 400;
   const CY = 240;
@@ -146,11 +148,11 @@ export default function ProductIngridients() {
   ];
 
   return (
-    <div ref={ref} className="min-h-screen flex items-center justify-center mt-24">
+    <div ref={refDesktop} className="h-[70vh] flex items-center justify-center mt-32 md:mt-64 md:mb-32">
 
       {/* ── DESKTOP ── */}
       <div className="hidden md:block relative w-full max-w-4xl" style={{ aspectRatio: "8/5" }}>
-        {isInView && (
+        {isInViewDesktop && (
           <motion.div
             className="absolute inset-0 flex items-center justify-center"
             style={{ zIndex: 1 }}
@@ -173,7 +175,7 @@ export default function ProductIngridients() {
           className="absolute inset-0 w-full h-full"
           style={{ overflow: "visible", zIndex: 2 }}
         >
-          {isInView && items.map((item) => (
+          {isInViewDesktop && items.map((item) => (
             <g key={item.key}>
               <motion.circle
                 cx={item.x1} cy={item.y1} r="3"
@@ -229,13 +231,11 @@ export default function ProductIngridients() {
       </div>
 
       {/* ── MOBILE ── */}
-      <div className="flex md:hidden w-full px-6 items-center gap-2">
-
-        {/* Gambar + dots + garis diagonal */}
+      <div ref={refMobile} className="flex md:hidden w-full px-6 items-center gap-2">
         <div className="relative flex-shrink-0 w-[150px]">
-          {isInView && (
+          {isInViewMobile && (
             <motion.img
-              src="/asset/Water Drop.png"
+              src="/asset/Water Drop.webp"
               alt="water-drop"
               className="w-full h-auto"
               initial={{ y: -30, opacity: 0 }}
@@ -243,7 +243,7 @@ export default function ProductIngridients() {
               transition={{ duration: 1.1, ease: [0.16, 1, 0.3, 1] }}
             />
           )}
-          {isInView && (
+          {isInViewMobile && (
             <svg
               className="absolute inset-0 w-full h-full"
               viewBox="0 0 150 320"
@@ -278,7 +278,7 @@ export default function ProductIngridients() {
         </div>
 
         {/* Labels */}
-        {isInView && (
+        {isInViewMobile && (
           <div className="flex flex-col justify-center gap-5 pl-2">
             {items.map((item) => (
               <MobileLabel

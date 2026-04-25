@@ -52,6 +52,8 @@
     },
     "CTA":{
         "text": "Let’s Grow Together\nfor a Better World",
+        "line1": "Let’s Grow Together",
+        "line2": "for a Better World",
         "button": "Contact Us"
     },
 
@@ -157,7 +159,8 @@
         "whatsappTitle":" Whatsapp/WeChat",
         "whatsapp":"+6281119888802",
         "wechat":" ben_josiah88",
-        "emailTitle":"Email"
+        "emailTitle":"Email",
+        "email":"ben.josiah.mail@gmail.com"
     },
     "Notification":{
         "success":" Thank You ",

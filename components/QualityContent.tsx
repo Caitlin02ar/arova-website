@@ -27,7 +27,7 @@ export default function QualityContent() {
                     delay: 0.1,
                 }}
                 viewport={{ once: true, amount: 0.3 }}
-                className={`py-10 flex items-center gap-10 md:gap-120 ${
+                className={`scroll-mt-44 py-10 flex items-center gap-10 md:gap-120 ${
                     index !== items.length - 1 ? "border-b border-[var(--color-dark-green)]" : ""
                 }`}
             >

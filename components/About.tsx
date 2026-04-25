@@ -18,7 +18,7 @@ export default function About() {
                     viewport={{ once: true, amount: 0.15 }}
                     className="w-full overflow-hidden will-change-transform">
                     <img
-                        src="/photos/about.jpg"
+                        src="/photos/about.webp"
                         alt="About Arova"
                         className="w-full h-[280px] object-cover"
                         loading="eager"

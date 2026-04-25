@@ -18,9 +18,9 @@ export default function Hero() {
             className="relative h-screen bg-no-repeat bg-auto bg-right md:bg-cover md:bg-center flex items-end md:items-center justify-start md:justify-center text-white"
             style={{ backgroundImage: "url('/photos/hero-bg.jpg')" }}
         >
-            <div className="text-left md:text-center max-w-2xl px-6 pb-16 md:pb-0 md:px-0">
+            <div className="text-left md:text-center max-w-3xl px-6 pb-16 md:pb-0 md:px-0">
                 <div className="absolute inset-0 bg-black/50" />
-                <div className="relative z-10 text-left md:text-center max-w-2xl">
+                <div className="relative z-10 text-left md:text-center max-w-3xl">
                     <motion.h1
                         className="font-heading text-4xl md:text-6xl"
                         initial={{ opacity: 0, y: 40 }}

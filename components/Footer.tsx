@@ -12,7 +12,9 @@ export default function Footer() {
         <footer className="bg-[var(--color-cream-1)] text-sm">
             <div className="hidden md:grid md:grid-cols-[1.5fr_1fr_1fr_1.5fr_1fr_1fr_2fr] gap-y-6 px-12 pt-16 pb-30 text-left">
                 <div>
-                    <img src="/logo/Logo Arova - Black.png" alt="Arova Logo" className="h-10 w-auto" />
+                    <Link href={`/${locale}`}>
+                        <img src="/logo/Logo Arova - Black.png" alt="Arova Logo" className="h-10 w-auto" />
+                    </Link>
                 </div>
                 <div>
                     <h4 className={`${headingWeight} mb-2 text-dark-green text-[1rem] font-heading`}>{t("home")}</h4>

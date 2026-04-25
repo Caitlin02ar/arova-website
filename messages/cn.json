@@ -48,6 +48,8 @@
     },
     "CTA": {
         "text": "携手共创更美好的世界",
+        "line1": "携手共创",
+        "line2": "更美好的世界",
         "button": "联系我们"
     },
     "ProductHero":{
@@ -151,7 +153,8 @@
         "whatsappTitle":" WhatsApp  / 微信（如适用)",
         "whatsapp":"+62-811-1988-8802",
         "wechat":" ben_josiah88",
-        "emailTitle":"电子邮箱 "
+        "emailTitle":"电子邮箱 ",
+        "email":"ben.josiah.mail@gmail.com"
     },
     "Notification":{
         "success":" 谢谢 ",

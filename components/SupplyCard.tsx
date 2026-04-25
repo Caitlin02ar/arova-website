@@ -7,7 +7,7 @@ export default function SupplyCard() {
     const t = useTranslations("ProductApply");
 
     const images = [
-        "/photos/apply-1.jpg",
+        "/photos/apply-1.webp",
         "/photos/apply-2.jpg",
         "/photos/apply-3.jpg",
         "/photos/apply-4.jpg",
