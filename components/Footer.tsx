@@ -82,7 +82,9 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className="shrink-0">
-                        <img src="/logo/Logo Arova - Black.png" alt="Arova Logo" className="h-10 w-auto" />
+                        <Link href={`/${locale}`}>
+                            <img src="/logo/Logo Arova - Black.png" alt="Arova Logo" className="h-10 w-auto" />
+                        </Link>                    
                     </div>
                 </div>
             </div>
